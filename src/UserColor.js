@@ -21,6 +21,7 @@ export default function UserColor() {
         width: 400,
         padding: '2px 20px',
         borderRadius: '30px',
+        transition: 'all 0.5s ease-in-out',
       }}
     >
       <h2>Choose your color</h2>

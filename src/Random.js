@@ -4,7 +4,6 @@ import { useState } from 'react';
 
 export default function RandomColor() {
   const [color, setColor] = useState('white');
-  const [defaultText, setDefaultText] = useState('');
 
   return (
     <div
@@ -17,22 +16,23 @@ export default function RandomColor() {
         width: 400,
         padding: '2px 20px',
         borderRadius: '30px',
+        transition: 'all 0.5s ease-in-out',
       }}
     >
       <h2> Generate a random color</h2>
       <button
         onClick={() => {
           setColor(randomcolor());
-          setDefaultText('Generated Color:');
         }}
       >
         Generate
       </button>
       <br />
       <br />
-      <div>
-        {' '}
-        {defaultText} {color !== 'white' && color}
+      <div
+        style={{ backgroundColor: color, transition: 'all 0.5s ease-in-out' }}
+      >
+        Generated Color: {color !== 'white' && color}
       </div>
     </div>
   );
