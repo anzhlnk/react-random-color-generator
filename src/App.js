@@ -5,7 +5,7 @@ import { useState } from 'react';
 export default function App() {
   const [color, setColor] = useState('');
   const [hue, setHue] = useState('');
-  const [luminosity, setLumi] = useState('');
+  const [luminosity, setLuminosity] = useState('');
   const [userColor, setUserColor] = useState('');
   const [defaultText, setDefaultText] = useState('');
   function handleColorChange() {
@@ -48,7 +48,7 @@ export default function App() {
         <input
           value={luminosity}
           onChange={(event) => {
-            setLumi(event.currentTarget.value);
+            setLuminosity(event.currentTarget.value);
           }}
         />
         <br />
