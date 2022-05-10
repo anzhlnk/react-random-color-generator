@@ -26,7 +26,7 @@ export default function RandomColor() {
           setDefaultText('Generated Color:');
         }}
       >
-        Generate!
+        Generate
       </button>
       <br />
       <br />
