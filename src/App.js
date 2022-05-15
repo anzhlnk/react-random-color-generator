@@ -5,7 +5,7 @@ import randomcolor from 'randomcolor';
 import RandomColor from './Random';
 import UserColor from './UserColor';
 
-const bck = () => css`
+const background = () => css`
   background-color: ${randomcolor({
     format: 'rgba',
     alpha: 0.4,
@@ -21,7 +21,7 @@ const bck = () => css`
 
 export default function App() {
   return (
-    <body css={bck}>
+    <body css={background}>
       <div className="App">
         <RandomColor />
         <br />
